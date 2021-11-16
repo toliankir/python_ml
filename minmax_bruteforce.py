@@ -10,7 +10,7 @@ class MathFunction:
                                          pow(x, 2)) + (self.c * x) + self.d
         return result
 
-    def clacMixMaxOnRange(self, start, end, delta):
+    def calcMinMaxOnRange(self, start, end, delta):
         min = max = self.calcFunc(start)
         while start <= end:
             start += delta
@@ -26,11 +26,11 @@ f1 = MathFunction(3.1, 10.3, -2.8, 10.3)
 f2 = MathFunction(2.1, 8.8, -11.4, -5.6)
 f3 = MathFunction(1.6, 0.2, -20.8, 38.5)
 
-min, max = f1.clacMixMaxOnRange(-4, 1, 0.0001)
+min, max = f1.calcMinMaxOnRange(-4, 1, 0.0001)
 print("min:{:.4f} max:{:.4f}".format(min,max))
 
-min, max = f2.clacMixMaxOnRange(-4, 1, 0.0001)
+min, max = f2.calcMinMaxOnRange(-4, 1, 0.0001)
 print("min:{:.4f} max:{:.4f}".format(min,max))
 
-min, max = f3.clacMixMaxOnRange(-4, 1, 0.0001)
+min, max = f3.calcMinMaxOnRange(-4, 1, 0.0001)
 print("min:{:.4f} max:{:.4f}".format(min,max))
