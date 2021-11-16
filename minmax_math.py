@@ -1,6 +1,5 @@
 import math
 
-
 class MathFunction:
     def __init__(self, a, b, c, d):
         self.a = a
